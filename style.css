@@ -1,3 +1,4 @@
+/* === General Layout === */
 body {
   font-family: 'Playfair Display', serif;
   max-width: 700px;
@@ -8,6 +9,7 @@ body {
   color: #222;
 }
 
+/* === Header Styling === */
 header {
   display: flex;
   align-items: center;
@@ -15,6 +17,7 @@ header {
   margin-bottom: 1.5rem;
   border-bottom: 1px solid #ddd;
   padding-bottom: 1rem;
+  flex-wrap: wrap;
 }
 
 .profile-photo {
@@ -24,6 +27,10 @@ header {
   object-fit: cover;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
+}
+
+.header-text {
+  flex: 1;
 }
 
 .header-text h1 {
@@ -37,29 +44,36 @@ header {
   color: #555;
 }
 
+/* === Navigation as Fixed, Responsive Buttons === */
 nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #fdfdfd;
+  padding: 0.5rem 0;
+  margin-bottom: 2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.5rem;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 nav a {
   text-decoration: none;
-  padding: 0.4rem 0.8rem;
+  padding: 0.4rem 0.9rem;
   border-radius: 20px;
   background-color: #eee;
   color: #333;
   font-weight: 600;
   font-size: 0.95rem;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
 }
 
 nav a:hover {
   background-color: #ccc;
   color: #000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 nav a.active {
@@ -67,6 +81,7 @@ nav a.active {
   color: #fff;
 }
 
+/* === Section Layout === */
 section {
   margin-top: 2.5rem;
 }
@@ -76,9 +91,10 @@ h2 {
   padding-bottom: 0.3rem;
 }
 
+/* === Footer with Icons === */
 footer {
-  margin-top: 3rem;
-  padding-top: 1rem;
+  margin-top: 4rem;
+  padding-top: 1.5rem;
   border-top: 1px solid #ddd;
   text-align: center;
 }
@@ -88,7 +104,7 @@ footer {
   padding: 0;
   display: flex;
   justify-content: center;
-  gap: 1.2rem;
+  gap: 1.5rem;
 }
 
 .footer-links li a {
@@ -97,21 +113,44 @@ footer {
   transition: color 0.2s ease;
 }
 
-.footer-links li a:hover,
-.footer-links li a:focus svg {
+.footer-links li a:hover {
   color: #000;
-  fill: #000;
 }
 
 .bluesky-icon {
   width: 24px;
   height: 24px;
   vertical-align: middle;
-  transition: filter 0.2s ease, opacity 0.2s ease;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
 }
 
 .bluesky-icon:hover {
-  filter: none;
   opacity: 1;
 }
 
+/* === Responsive Tweaks === */
+@media (max-width: 600px) {
+  header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .profile-photo {
+    margin-bottom: 1rem;
+  }
+
+  .header-text h1 {
+    font-size: 1.6rem;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    width: 100%;
+    text-align: center;
+  }
+}
