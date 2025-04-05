@@ -92,12 +92,13 @@ footer {
   width: 24px;
   height: 24px;
   vertical-align: middle;
+  filter: grayscale(100%) brightness(50%);
   opacity: 0.7;
-  transition: opacity 0.2s ease;
+  transition: filter 0.2s ease, opacity 0.2s ease;
 }
 
 .bluesky-icon:hover {
+  filter: none;
   opacity: 1;
 }
-
 
