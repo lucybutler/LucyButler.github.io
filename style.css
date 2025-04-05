@@ -48,3 +48,14 @@ h2 {
   border-bottom: 1px solid #ccc;
   padding-bottom: 0.3rem;
 }
+
+.profile-photo {
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
