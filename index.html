@@ -7,37 +7,93 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
   <style>
-    /* Ensure image is small and circular even if style.css isn't working */
+    /* Just in case your style.css isn't fully loading */
+    body {
+      font-family: 'Playfair Display', serif;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 2rem;
+      line-height: 1.6;
+      background-color: #fdfdfd;
+      color: #222;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
     .profile-photo {
-      display: block;
-      margin: 0 auto 20px;
+      width: 100px;
+      height: 100px;
       border-radius: 50%;
-      width: 120px;
-      height: 120px;
       object-fit: cover;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      flex-shrink: 0;
+    }
+
+    .header-text h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .header-text p {
+      margin: 0.2rem 0 0;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin-right: 1rem;
+      text-decoration: none;
+      color: #006699;
+      font-weight: bold;
+    }
+
+    nav a:hover,
+    nav a.active {
+      text-decoration: underline;
+      color: #000;
+    }
+
+    section {
+      margin-top: 2.5rem;
+    }
+
+    h2 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.3rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Lucy Butler</h1>
-    <p>Postdoctoral Research Fellow | 
-      <a href="https://www.networkscienceinstitute.org/pomlab" target="_blank">Psychology of Misinformation Lab</a>
-    </p>
-    <nav>
-      <a href="index.html" class="active">About</a>
-      <a href="cv.html">CV</a>
-      <a href="publications.html">Publications</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <img src="images/LButler_Headshot.jpeg" alt="Lucy Butler" class="profile-photo">
+    <div class="header-text">
+      <h1>Lucy Butler</h1>
+      <p>Postdoctoral Research Fellow | 
+        <a href="https://www.networkscienceinstitute.org/pomlab" target="_blank">Psychology of Misinformation Lab</a>
+      </p>
+    </div>
   </header>
+
+  <nav>
+    <a href="index.html" class="active">About</a>
+    <a href="cv.html">CV</a>
+    <a href="publications.html">Publications</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
   <main>
     <section>
       <h2>About Me</h2>
-      <img src="images/LButler_Headshot.jpeg" alt="Lucy Butler" class="profile-photo">
       <p>Hello! I’m Lucy Butler, a Postdoctoral Research Fellow in the 
         <a href="https://www.networkscienceinstitute.org/pomlab" target="_blank">Psychology of Misinformation Lab</a> 
         at the 
