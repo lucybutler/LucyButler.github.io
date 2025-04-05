@@ -12,7 +12,9 @@ header {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
 }
 
 .profile-photo {
@@ -30,26 +32,39 @@ header {
 }
 
 .header-text p {
-  margin: 0.2rem 0 0;
+  margin: 0.3rem 0 0;
   font-size: 1rem;
   color: #555;
 }
 
 nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
   margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 nav a {
-  margin-right: 1rem;
   text-decoration: none;
-  color: #006699;
-  font-weight: bold;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  background-color: #eee;
+  color: #333;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-nav a:hover,
-nav a.active {
-  text-decoration: underline;
+nav a:hover {
+  background-color: #ccc;
   color: #000;
+}
+
+nav a.active {
+  background-color: #006699;
+  color: #fff;
 }
 
 section {
