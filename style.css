@@ -1,4 +1,4 @@
-/* === General Layout === */
+/* === GENERAL === */
 body {
   font-family: 'Playfair Display', serif;
   max-width: 700px;
@@ -9,11 +9,11 @@ body {
   color: #222;
 }
 
-/* === Header Styling === */
+/* === HEADER === */
 header {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
   margin-bottom: 1.5rem;
   border-bottom: 1px solid #ddd;
   padding-bottom: 1rem;
@@ -21,11 +21,11 @@ header {
 }
 
 .profile-photo {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
   flex-shrink: 0;
 }
 
@@ -35,45 +35,39 @@ header {
 
 .header-text h1 {
   margin: 0;
-  font-size: 2rem;
+  font-size: 1.9rem;
 }
 
 .header-text p {
-  margin: 0.3rem 0 0;
-  font-size: 1rem;
+  margin: 0.2rem 0 0;
+  font-size: 0.95rem;
   color: #555;
+  font-weight: 400;
 }
 
-/* === Navigation as Fixed, Responsive Buttons === */
+/* === NAVIGATION === */
 nav {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background-color: #fdfdfd;
-  padding: 0.5rem 0;
-  margin-bottom: 2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.5rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  gap: 0.4rem;
+  margin: 1rem 0 2rem;
 }
 
 nav a {
   text-decoration: none;
-  padding: 0.4rem 0.9rem;
-  border-radius: 20px;
+  padding: 0.3rem 0.8rem;
+  border-radius: 14px;
   background-color: #eee;
   color: #333;
-  font-weight: 600;
-  font-size: 0.95rem;
-  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
 }
 
 nav a:hover {
   background-color: #ccc;
   color: #000;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 nav a.active {
@@ -81,35 +75,38 @@ nav a.active {
   color: #fff;
 }
 
-/* === Section Layout === */
+/* === MAIN SECTIONS === */
 section {
-  margin-top: 2.5rem;
+  margin-top: 2rem;
 }
 
 h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
   border-bottom: 1px solid #ccc;
   padding-bottom: 0.3rem;
 }
 
-/* === Footer with Icons === */
+/* === FOOTER === */
 footer {
-  margin-top: 4rem;
+  margin-top: 3rem;
   padding-top: 1.5rem;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #eee;
   text-align: center;
 }
 
 .footer-links {
   list-style: none;
   padding: 0;
+  margin: 0;
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 1.2rem;
 }
 
 .footer-links li a {
-  color: #555;
-  font-size: 1.5rem;
+  color: #999;
+  font-size: 1.2rem;
   transition: color 0.2s ease;
 }
 
@@ -118,8 +115,8 @@ footer {
 }
 
 .bluesky-icon {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   vertical-align: middle;
   opacity: 0.7;
   transition: opacity 0.2s ease;
@@ -129,7 +126,7 @@ footer {
   opacity: 1;
 }
 
-/* === Responsive Tweaks === */
+/* === RESPONSIVE === */
 @media (max-width: 600px) {
   header {
     justify-content: center;
@@ -137,7 +134,9 @@ footer {
   }
 
   .profile-photo {
-    margin-bottom: 1rem;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 0.5rem;
   }
 
   .header-text h1 {
@@ -152,5 +151,6 @@ footer {
   nav a {
     width: 100%;
     text-align: center;
+    font-size: 0.9rem;
   }
 }
