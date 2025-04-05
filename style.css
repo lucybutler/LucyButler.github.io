@@ -9,17 +9,29 @@ body {
 }
 
 header {
-  text-align: center;
-  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
 }
 
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.3rem;
+.profile-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
 }
 
-header p {
-  font-size: 1.1rem;
+.header-text h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.header-text p {
+  margin: 0.2rem 0 0;
+  font-size: 1rem;
   color: #555;
 }
 
@@ -28,7 +40,7 @@ nav {
 }
 
 nav a {
-  margin: 0 0.8rem;
+  margin-right: 1rem;
   text-decoration: none;
   color: #006699;
   font-weight: bold;
@@ -41,20 +53,10 @@ nav a.active {
 }
 
 section {
-  margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
 }
 
 h2 {
   border-bottom: 1px solid #ccc;
   padding-bottom: 0.3rem;
-}
-
-.profile-photo {
-  display: block;
-  margin: 0 auto 20px;
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
