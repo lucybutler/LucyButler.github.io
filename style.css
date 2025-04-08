@@ -1,15 +1,21 @@
-/* === GENERAL === */
+:root {
+  --primary: #006699;
+  --bg: #f5f7f5;
+  --text: #444444;
+  --heading: #222222;
+  --soft: #e8f1f5;
+}
+
 body {
   font-family: 'Playfair Display', serif;
+  background-color: var(--bg);
+  color: var(--text);
   max-width: 700px;
   margin: 0 auto;
   padding: 2rem;
   line-height: 1.6;
-  background-color: #fdfdfd;
-  color: #222;
 }
 
-/* === HEADER === */
 header {
   display: flex;
   align-items: center;
