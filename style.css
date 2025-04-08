@@ -153,4 +153,33 @@ footer {
     text-align: center;
     font-size: 0.9rem;
   }
+
+  .cv-section {
+  margin-bottom: 2.5rem;
+}
+
+.cv-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #eee;
+  padding: 0.5rem 0;
+}
+
+.cv-entry div {
+  max-width: 80%;
+}
+
+.cv-date {
+  font-size: 0.9rem;
+  color: #666;
+  white-space: nowrap;
+}
+
+.cv-bullets {
+  list-style-type: disc;
+  margin-left: 1.2rem;
+  margin-top: 0.5rem;
+  padding-left: 0;
+}
 }
