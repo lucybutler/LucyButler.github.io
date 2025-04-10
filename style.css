@@ -1,19 +1,28 @@
 :root {
-  --primary: #006699;
+--primary: #4e6e5d;
   --bg: #f5f7f5;
   --text: #444444;
   --heading: #222222;
-  --soft: #e8f1f5;
+--soft: #eaf2ed;  
 }
 
 body {
-  font-family: 'Playfair Display', serif;
-  background-color: var(--bg);
-  color: var(--text);
-  max-width: 700px;
-  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #333;
+  background-color: #fefefe;
   padding: 2rem;
-  line-height: 1.6;
+  max-width: 800px;
+  margin: auto;
+}
+
+section {
+  animation: fadeIn 0.6s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 header {
