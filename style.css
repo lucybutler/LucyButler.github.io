@@ -1,8 +1,8 @@
 :root {
   --primary: #e9f0eb;
   --primary-dark: #3e5a4c;
-  --accent: #7a9185;
-  --bg: #c5cec8;
+  --accent: #e9f0eb;
+  --bg: #edf3ef;
   --text: #444444;
   --heading: #222222;
   --soft: #eaf2ed;
@@ -90,7 +90,7 @@ nav a:hover {
 
 nav a.active {
   background-color: var(--accent);
-  color: #222;
+  color: #d0d0d0;
 }
 
 h2 {
