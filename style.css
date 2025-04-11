@@ -1,5 +1,5 @@
 :root {
-  --primary: #4e6e5d;
+  --primary: #e9f0eb;
   --primary-dark: #3e5a4c;
   --accent: #7a9185;
   --bg: #c5cec8;
@@ -77,7 +77,7 @@ nav a {
   padding: 0.3rem 0.8rem;
   border-radius: 14px;
   background-color: var(--accent);
-  color: #333;
+  color: #FFF;
   font-size: 0.85rem;
   font-weight: 500;
   transition: all 0.2s ease;
