@@ -84,12 +84,12 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #bbb;
+  background-color: #d3dfd2;
   color: #000;
 }
 
 nav a.active {
-  background-color: var(--primary);
+  background-color: #484848;
   color: #d0d0d0;
 }
 
@@ -201,7 +201,6 @@ footer {
   }
 
   nav a {
-    width: 100%;
     text-align: center;
     font-size: 0.9rem;
   }
