@@ -76,7 +76,7 @@ nav a {
   text-decoration: none;
   padding: 0.3rem 0.8rem;
   border-radius: 14px;
-  background-color: var(--accent);
+  background-color: var(--primary);
   color: #FFF;
   font-size: 0.85rem;
   font-weight: 500;
@@ -89,7 +89,7 @@ nav a:hover {
 }
 
 nav a.active {
-  background-color: var(--accent);
+  background-color: var(--primary);
   color: #d0d0d0;
 }
 
